@@ -1,3 +1,5 @@
+package Ejercicio3;
+
 public class MainCuenta {
     public static void main(String[] args) {
         Cuenta c1 = new Cuenta("Alfredo", 100.0);

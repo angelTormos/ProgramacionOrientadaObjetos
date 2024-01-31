@@ -1,3 +1,7 @@
+package Ejercicio1;
+
+import Ejercicio1.Ordenadores;
+
 public class MainOrdenadores {
     public static void main(String[] args) {
 

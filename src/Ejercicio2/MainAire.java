@@ -1,3 +1,5 @@
+package Ejercicio2;
+
 public class MainAire {
     public static void main(String[] args) {
         AireAcondicionado Aire1 = new AireAcondicionado("MAX5871", 15, 15,31);

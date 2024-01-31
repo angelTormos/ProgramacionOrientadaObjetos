@@ -1,3 +1,5 @@
+package Ejercicio2;
+
 public class AireAcondicionado {
 
     private String nombre;

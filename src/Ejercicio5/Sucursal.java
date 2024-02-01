@@ -6,12 +6,14 @@ import java.util.Set;
 public class Sucursal {
     private int n_suc;
     private Banco banco;
+    private String direccion;
     private Set<Prestec> prestecs;
     private Set<CompteCorrent> comptes;
 
-    public Sucursal(int nSuc, Banco banco) {
+    public Sucursal(int nSuc, Banco banco, String direccion) {
         this.n_suc = nSuc;
         this.banco = banco;
+        this.direccion = direccion;
         this.prestecs = new HashSet<>();
         this.comptes = new HashSet<>();
     }
@@ -32,6 +34,14 @@ public class Sucursal {
         this.banco = banco;
     }
 
+    public String getDireccion() {
+        return direccion;
+    }
+
+    public void setDireccion(String direccion) {
+        this.direccion = direccion;
+    }
+
     public Set<Prestec> getPrestecs() {
         return prestecs;
     }
@@ -46,5 +56,18 @@ public class Sucursal {
 
     public void setComptes(Set<CompteCorrent> comptes) {
         this.comptes = comptes;
+    }
+
+    public void addPrestec(Prestec prestec) {
+        this.prestecs.add(prestec);
+    }
+
+    public void addCompte(CompteCorrent compteCorrent) {
+        this.comptes.add(compteCorrent);
+    }
+
+    @Override
+    public String toString(){
+        return this.n_suc + " - " + this.direccion;
     }
 }
